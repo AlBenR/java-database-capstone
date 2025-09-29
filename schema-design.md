@@ -117,7 +117,7 @@
     "isConfidential": true
   }
 }
-
+```
 ### Collection: patient_feedback
 ```json
 {
@@ -140,7 +140,7 @@
     "contacted": false
   }
 }
-
+```
 ### Collection: prescription_details
 ```json
 {
@@ -184,7 +184,7 @@
     "refillsRemaining": 1
   }
 }
-
+```
 ### Collection: chat_messages
 ```json
 {
@@ -204,7 +204,7 @@
   },
   "replyTo": null
 }
-
+```
 ### Collection: audit_logs
 ```json
 {
