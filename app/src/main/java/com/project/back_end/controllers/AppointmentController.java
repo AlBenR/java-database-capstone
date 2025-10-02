@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import com.project.back_end.model.Appointment;
+import com.project.back_end.models.Appointment;
 import com.project.back_end.services.AppointmentService;
 import com.project.back_end.services.Service;
 import java.util.Map;
@@ -36,7 +36,8 @@ public class AppointmentController {
         if (validationResponse.getStatusCode().isError()) {
             return ResponseEntity.status(validationResponse.getStatusCode()).body(Map.of("error", "Invalid token"));
         }
-        return appointmentService.getAppointment(patientName, java.time.LocalDate.parse(date), token);
+        Map<String, Object> result = appointmentService.getAppointment(patientName, java.time.LocalDate.parse(date), token);
+        return ResponseEntity.ok(result);
     }
 
     @PostMapping("/{token}")

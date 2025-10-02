@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import com.project.back_end.model.Admin;
+import com.project.back_end.models.Admin;
 import com.project.back_end.services.Service;
 import java.util.Map;
 

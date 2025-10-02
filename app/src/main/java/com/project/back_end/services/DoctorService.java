@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.http.ResponseEntity;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.project.back_end.model.Doctor;
+import com.project.back_end.models.Doctor;
 import com.project.back_end.DTO.Login;
 import com.project.back_end.repo.DoctorRepository;
 import com.project.back_end.repo.AppointmentRepository;
