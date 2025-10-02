@@ -11,7 +11,7 @@ import org.springframework.http.ResponseEntity;
 import com.project.back_end.models.Patient;
 import com.project.back_end.DTO.Login;
 import com.project.back_end.services.PatientService;
-import com.project.back_end.services.Service;
+import com.project.back_end.services.MainService;
 import java.util.Map;
 
 @RestController
@@ -19,10 +19,10 @@ import java.util.Map;
 public class PatientController {
 
     private final PatientService patientService;
-    private final Service service;
+    private final MainService service;
 
     @Autowired
-    public PatientController(PatientService patientService, Service service) {
+    public PatientController(PatientService patientService, MainService service) {
         this.patientService = patientService;
         this.service = service;
     }

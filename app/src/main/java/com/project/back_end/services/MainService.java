@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 @Service
-public class Service {
+public class MainService {
 
     private final TokenService tokenService;
     private final AdminRepository adminRepository;
@@ -24,7 +24,7 @@ public class Service {
     private final PatientService patientService;
 
     @Autowired
-    public Service(TokenService tokenService,
+    public MainService(TokenService tokenService,
                   AdminRepository adminRepository,
                   DoctorRepository doctorRepository,
                   PatientRepository patientRepository,

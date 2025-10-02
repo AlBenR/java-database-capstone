@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import com.project.back_end.models.Appointment;
 import com.project.back_end.services.AppointmentService;
-import com.project.back_end.services.Service;
+import com.project.back_end.services.MainService;
 import java.util.Map;
 
 @RestController
@@ -20,10 +20,10 @@ import java.util.Map;
 public class AppointmentController {
 
     private final AppointmentService appointmentService;
-    private final Service service;
+    private final MainService service;
 
     @Autowired
-    public AppointmentController(AppointmentService appointmentService, Service service) {
+    public AppointmentController(AppointmentService appointmentService, MainService service) {
         this.appointmentService = appointmentService;
         this.service = service;
     }

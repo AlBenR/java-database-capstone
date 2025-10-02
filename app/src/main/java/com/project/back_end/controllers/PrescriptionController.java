@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import com.project.back_end.models.Prescription;
 import com.project.back_end.services.PrescriptionService;
-import com.project.back_end.services.Service;
+import com.project.back_end.services.MainService;
 import java.util.Map;
 
 @RestController
@@ -18,10 +18,10 @@ import java.util.Map;
 public class PrescriptionController {
 
     private final PrescriptionService prescriptionService;
-    private final Service service;
+    private final MainService service;
 
     @Autowired
-    public PrescriptionController(PrescriptionService prescriptionService, Service service) {
+    public PrescriptionController(PrescriptionService prescriptionService, MainService service) {
         this.prescriptionService = prescriptionService;
         this.service = service;
     }

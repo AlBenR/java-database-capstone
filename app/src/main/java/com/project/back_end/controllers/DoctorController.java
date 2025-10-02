@@ -13,7 +13,7 @@ import org.springframework.http.ResponseEntity;
 import com.project.back_end.models.Doctor;
 import com.project.back_end.DTO.Login;
 import com.project.back_end.services.DoctorService;
-import com.project.back_end.services.Service;
+import com.project.back_end.services.MainService;
 import java.time.LocalDate;
 import java.util.Map;
 import java.util.HashMap;
@@ -23,10 +23,10 @@ import java.util.HashMap;
 public class DoctorController {
 
     private final DoctorService doctorService;
-    private final Service service;
+    private final MainService service;
 
     @Autowired
-    public DoctorController(DoctorService doctorService, Service service) {
+    public DoctorController(DoctorService doctorService, MainService service) {
         this.doctorService = doctorService;
         this.service = service;
     }
